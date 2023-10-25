@@ -314,6 +314,9 @@ int
 TDConcreteMC10NL::setTrialStrain(double trialStrain, double strainRate)
 {
 	//cout << "\n   checking!!";
+
+	opserr << "checking!! "  endln;
+
 	double t = getCurrentTime();
     double tol = 1.e-4; // 9/13
     double test = 10.0; // 9/13

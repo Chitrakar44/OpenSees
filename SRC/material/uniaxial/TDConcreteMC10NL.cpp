@@ -313,9 +313,9 @@ TDConcreteMC10NL::setShrinkDrying(double time)
 int
 TDConcreteMC10NL::setTrialStrain(double trialStrain, double strainRate)
 {
-	//cout << "\n   checking!!";
+	// << "\n   checking!!";
 
-	opserr << "checking!! "  endln;
+	
 
 	double t = getCurrentTime();
     double tol = 1.e-4; // 9/13
@@ -560,7 +560,7 @@ TDConcreteMC10NL::commitState(void)
     if (eps_m < 0 && fabs(eps_m)>0.40*fabs(fc/Ec)) {
         double s = fabs(eps_m/fc)*Ec;
 	s = 0.4*fabs(fc/Ec);
-	opserr << "Strain Compression Limit Exceeded: " << eps_m << ' ' << -s << endln;
+	opserr << "Strain Compression Limit Exceeded222222: " << eps_m << ' ' << -s << endln;
     }
 		//Cracking flags:
 		crackP_flag = crack_flag;
